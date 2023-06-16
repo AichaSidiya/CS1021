@@ -1,0 +1,16 @@
+// Get (x)
+// While x > 0
+	// Print x
+	// X=x-1
+
+Input
+Store 70
+While, Skipcond 800
+Jump End
+Load 70
+Output
+Subt one
+Store 70
+Jump While
+End, Halt
+one, hex 1
