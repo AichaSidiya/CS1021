@@ -1,0 +1,33 @@
+// Get(x)
+// Get(y)
+
+// While x is different than y
+	// Print(x)
+	// Print(y)
+// x=x+1
+// y=y-1
+
+
+// Will this loop always end?
+// It depends on the input
+
+Input
+Store 70
+Input
+Store 71
+Subt 70
+While, Skipcond 400
+Jump End
+Load 70
+Output
+Load 71
+Output
+Load 70
+Add one
+Store 70
+Load 71
+Subt one
+Store 71
+Jump While
+End, Halt
+one, hex 1
