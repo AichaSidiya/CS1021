@@ -1,0 +1,14 @@
+//Write a program that takes as input one number x and displays x if x>=0, -x otherwise.
+//For example, for x=5  OUTPUT=5
+//For x=-3  OUTPUT=3
+
+Input
+Store 10
+IF, Skipcond 800 
+Jump Else
+Output
+Jump End
+Else,Clear
+Subt 10
+Output 
+End, Halt
