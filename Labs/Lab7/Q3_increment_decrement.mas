@@ -1,0 +1,22 @@
+Input
+Store 25
+Add ONE
+Output
+Load 25
+Subt ONE
+Output
+Halt
+ONE, hex 1
+
+Input
+Store X
+Load X
+Add ONE
+Output
+Load X
+Subt ONE
+Output
+Halt
+
+X, DEC 0
+ONE, DEC 1
