@@ -1,0 +1,23 @@
+// Write a program that takes as inputs two numbers x and y.
+// If x>= y, the program will display x-y+1
+// Else, it will display y-x+1
+
+Input
+Store 60
+Input 
+Store 61
+Load 60
+Subt 61
+IF, Skipcond 800 /x > y
+Jump Else
+Load 60
+Subt 61
+Add One
+Output
+Jump End
+Else,Load 61
+Subt 60
+Add One
+Output 
+End, Halt
+One, hex 1
