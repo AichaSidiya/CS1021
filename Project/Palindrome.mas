@@ -1,0 +1,67 @@
+Input /get the size of the string.
+	StoreI length 
+        	StoreI size
+	JnS get //execute the input function.
+       	 JnS print //execute the print function.
+       	 Load array 
+	Subt one //decreasing the last index.
+       	 Store array
+       	 JnS check //execute the check function to determine if it's palindrome or not
+       	 Load one
+	Output /if the loop completed checking the whole word it means it's a palindrome and output
+	Jump end
+notp,	Load notpalindrome
+		Output /if it's not a palindrome output 0.
+end,	halt
+get,	HEX 0    
+loop1,	Clear /a function to get the string from the user.
+	Input
+	StoreI array
+       	 Load array
+	Add one //increase the index.
+       	 Store array
+       	 LoadI  length
+       	 Subt one //decrease the size.
+       	 StoreI  length
+       	 Skipcond 400
+       	 Jump loop1
+	JumpI get //end of the function, back to the main code.
+print,	HEX 0        
+loop2,	Clear /a function to print the string.
+	LoadI printi
+	Output
+	Load printi
+	Add one
+       	 Store printi
+       	 LoadI size
+	Subt one
+	StoreI size
+	Skipcond 400
+        	Jump loop2
+	JumpI print    
+check,	HEX 0
+loop3,	LoadI starti //load value of first index.
+	store 98 
+       	 LoadI array //load the value of the last index.
+	Subt 98 //subtract the two values.
+       	 Skipcond 400 //if the result is 0, it means they're equal and will skip to continue the loop.
+       	 Jump notp //if it's not zero, it means not palindrome and the loop will end.
+       	 Load starti 
+	Add one //first index +1
+       	 Store starti
+       	 Load array 
+	Subt one //last index -1
+       	 Store array
+	Subt starti 
+	Skipcond 800 //check if array index(last) is larger than start index.
+       	 JumpI check //if it's not larger, will end the loop.
+	Jump loop3 //if it's larger, will repeat the loop.
+
+        
+notpalindrome, DEC 0
+one,	DEC 1	
+size,	HEX 99 //counter for loop2.
+length,	HEX 100
+starti,	HEX 101 //set to the first index of the string.
+printi,	HEX 101
+array,	HEX 101 //this index will be changing in (loop1) until it stops at the last index.
