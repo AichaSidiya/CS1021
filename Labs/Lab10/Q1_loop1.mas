@@ -1,0 +1,20 @@
+// Get (x)
+// While x > 0
+	// If x > 1000
+		// Print(x)
+	
+Input
+Store 70
+While, Skipcond 800
+Jump End
+Load 70
+Subt thousand
+Skipcond 800
+Jump input
+Load 70
+Output
+input, Input
+Store 70
+Jump While
+End, Halt
+thousand, DEC 1000
