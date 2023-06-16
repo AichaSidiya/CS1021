@@ -1,0 +1,33 @@
+Input 
+Store 10
+Input 
+Store 11
+Input 
+Store 12
+Add 10
+Add 11
+Output
+Store 13
+Halt
+
+Input 
+Store X
+Store 10
+Input 
+Store Y
+Store 11
+Input 
+Store Z
+Store 12
+Load X
+Add Y
+Add Z
+Store SUM
+Store 13
+Output
+Halt
+
+X, DEC 0
+Y, DEC 0
+Z, DEC 0
+SUM, DEC 0
