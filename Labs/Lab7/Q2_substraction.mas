@@ -1,0 +1,34 @@
+Input 
+Store 60
+Input 
+Store 61
+Input 
+Store 62
+Load 60
+Subt  61
+Subt  62
+Output
+Store 65
+Halt
+
+Input 
+Store X
+Store 60
+Input 
+Store Y
+Store 61
+Input 
+Store Z
+Store 62
+Load X
+Subt  Y
+Subt  Z
+Store RESULT
+Store 65
+Output
+Halt
+
+X, DEC 0
+Y, DEC 0
+Z, DEC 0
+RESULT, DEC 0
